@@ -38,7 +38,7 @@ export class BlocksfoundComponent implements OnInit {
 
 	ngOnInit() {
     // get the data
-    this.httpdataservice.get_request(this.httpdataservice.POOL_GET_BLOCKS_FOUND).subscribe(
+    this.httpdataservice.get_request(this.httpdataservice.POOL_GET_BLOCKS_FOUND + "?start=1&amount=all").subscribe(
   	  (res) =>
   	  {
         this.exampleDatabase = new ExampleDatabase();
