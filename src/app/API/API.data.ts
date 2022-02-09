@@ -67,6 +67,15 @@ export const API_DATA:any = [
       description: 'Show all blocks found by the shared delegate',
       method: 'GET',
       url: '/getblocksfound',
+            parameters: [
+        { "name": "start",
+          "desc": "The start item (use 1 for the first item)"
+        },
+        {
+          "name": "amount",
+          "desc": "The amount of items to return (use all for max items)"
+        }
+      ],
       result: [
         {
           "name": "block_height",
@@ -155,6 +164,13 @@ export const API_DATA:any = [
       parameters: [
         { "name": "public_address",
           "desc": "The public address of the delegate"
+        },
+        { "name": "start",
+          "desc": "The start item (use 1 for the first item)"
+        },
+        {
+          "name": "amount",
+          "desc": "The amount of items to return (use all for max items)"
         }
       ],
       result: [
