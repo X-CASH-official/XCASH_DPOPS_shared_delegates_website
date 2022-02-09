@@ -50,7 +50,7 @@ export class VoterstatisticsComponent implements OnInit {
 
 	get_public_address_payment_information(data:string)	{
     // get the data
-	  this.httpdataservice.get_request(this.httpdataservice.POOL_GET_PUBLIC_ADDRESS_PAYMENT_INFORMATION + "?public_address=" + data).subscribe(
+	  this.httpdataservice.get_request(this.httpdataservice.POOL_GET_PUBLIC_ADDRESS_PAYMENT_INFORMATION + "?public_address=" + data + "&start=1&amount=0").subscribe(
   	  (res) => {
         var data = JSON.parse(JSON.stringify(res));
         this.total_number_of_payments = data.length;
