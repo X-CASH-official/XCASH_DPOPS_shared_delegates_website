@@ -90,7 +90,8 @@ export class VoterstatisticsComponent implements OnInit {
         );
 
   	  }, (error) => {
-  	    Swal.fire("Error","An error has occured.<br/>Get public address payment information failed.","error");
+          console.log("Unable to get public address payment information.");
+  	    //Swal.fire("Error","An error has occured.<br/>Get public address payment information failed.","error");
   	  }
 	  );
 	}
