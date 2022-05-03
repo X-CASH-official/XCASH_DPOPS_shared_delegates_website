@@ -113,6 +113,53 @@ export const API_DATA:any = [
         \xA0 }
     ]
       `.trim()
+    },{
+      title: 'Get Processed Names',
+      description: 'Show all of the processed names and renewals by the shared delegate',
+      method: 'GET',
+      url: '/getremotedataprocessednames',
+            parameters: [
+        { "name": "start",
+          "desc": "The start item (use 1 for the first item)"
+        },
+        {
+          "name": "amount",
+          "desc": "The amount of items to return (use all for max items)"
+        }
+      ],
+      result: [
+        {
+          "name": "name",
+          "desc": "The namespace name"
+        },
+        {
+          "name": "action",
+          "desc": "register or renew"
+        },
+        {
+          "name": "amount",
+          "desc": "The amount that was paid to the delegate for the action to be processed"
+        },
+        {
+          "name": "timestamp",
+          "desc": "The time the action happened"
+        }
+      ],
+      response: `[
+        \xA0 {
+        \xA0 \xA0   "name":"xcashfoundation",
+        \xA0 \xA0   "action":"register",
+        \xA0 \xA0   "amount":"1000000000000",
+        \xA0 \xA0   "timestamp":"1651602165"
+        \xA0 },
+        \xA0 {
+        \xA0 \xA0   "name":"xcashfoundation",
+        \xA0 \xA0   "action":"renew",
+        \xA0 \xA0   "amount":"1000000000000",
+        \xA0 \xA0   "timestamp":"1651602165"
+        \xA0 }
+    ]
+      `.trim()
     },
     {
       title: 'Get Public Address Information',

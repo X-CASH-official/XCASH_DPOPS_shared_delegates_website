@@ -10,6 +10,7 @@ export class HttpdataService{
 
   POOL_GET_STATISTICS:string = environment.node_apiEndPoint + "/shareddelegateswebsitegetstatistics";
   POOL_GET_BLOCKS_FOUND:string = environment.node_apiEndPoint + "/getblocksfound";
+  POOL_GET_PROCESSED_NAMES:string = environment.node_apiEndPoint + "/getremotedataprocessednames";
   POOL_GET_PUBLIC_ADDRESS_INFORMATION:string = environment.node_apiEndPoint + "/getpublicaddressinformation";
   POOL_GET_DELEGATES_VOTERS_LIST:string = environment.node_apiEndPoint + "/getdelegatesvoterslist";
   POOL_GET_PUBLIC_ADDRESS_PAYMENT_INFORMATION:string = environment.node_apiEndPoint + "/getpublicaddresspaymentinformation";

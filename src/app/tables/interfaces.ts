@@ -6,6 +6,14 @@ export interface blocksfounddata {
   block_reward: string;
 }
 
+export interface processednamesdata {
+  id: string;
+  name: string;
+  action: string;
+  amount: string;
+  timestamp: string;
+}
+
 export interface voterslistdata {
   id: string;
   public_address_created_reserve_proof: string;

@@ -27,6 +27,7 @@ import { MatPaginatorModule,
 
 
 import { BlocksfoundComponent } from './blocksfound/blocksfound.component';
+import { ProcessednamesComponent } from './processednames/processednames.component';
 import { VoterslistComponent } from './voterslist/voterslist.component';
 import { VoterstatisticsComponent } from './voterstatistics/voterstatistics.component';
 
@@ -68,6 +69,7 @@ import { DashboardWidgetModule } from '../dashboard-widget/dashboard-widget.modu
   ],
   declarations: [
    BlocksfoundComponent,
+   ProcessednamesComponent,
    VoterslistComponent,
    VoterstatisticsComponent],
 

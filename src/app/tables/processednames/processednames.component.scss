@@ -1,0 +1,51 @@
+.mat-toolbar-single-row{
+	height: 75px;
+}
+.mat-form-field {
+		font-weight: 500;
+		line-height: normal;
+		font-family: Roboto, "Helvetica Neue", sans-serif;
+		padding: 0px;
+		margin:0;
+
+		width: 100%;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {text-align: center !important; margin-left: 52px !important;}
+
+.mat-cell, .mat-header-cell {
+    overflow-wrap: break-word;
+		word-wrap: break-word;
+
+    -ms-word-break: break-word;
+    word-break: break-word;
+
+    -ms-hyphens: manual;
+    -moz-hyphens: manual;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+
+// flex: <'flex-grow'> <'flex-shrink'> <'flex-basis'>
+.mat-column-ID {
+	flex: 1 0 34px;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.mat-column-block_height {
+	flex: 1 1 100px;
+}
+.mat-column-block_date_and_time {
+  flex: 1 1  100px;
+}
+.mat-column-block_reward {
+  flex: 1 1 80px;
+}
+.mat-column-block_hash {
+  flex: 4 1 40%;
+}
+
+mat-cell:first-of-type, mat-footer-cell:first-of-type, mat-header-cell:first-of-type { padding-left: 6px;}
+mat-footer-cell:last-of-type, mat-header-cell:last-of-type  { padding-right: 0px;}
+mat-cell:last-of-type  { padding-right: 6px;}

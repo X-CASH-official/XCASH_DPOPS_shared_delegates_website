@@ -12,6 +12,12 @@ export const menus = [
         'icon': 'find_in_page',
     },
     {
+        'name': 'Processed Names',
+        'open': false,
+        'link': '/processednames',
+        'icon': 'find_in_page',
+    },
+    {
         'name': 'Voters List',
         'open': false,
         'link': '/voters/list',
